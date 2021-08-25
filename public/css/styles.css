@@ -48,9 +48,19 @@ footer {
 /*seteos main*/
 /* seteos banner */
 
+.top_main_front {
+  position: relative;
+  display: flex;
+}
+
+.banner {
+  width: 100%;
+}
+
 .logo {
   position: absolute;
-  top: 15%;
+  width: 20%;
+  top: 5%;
   display: block;
   text-align: left;
 }
@@ -59,6 +69,18 @@ footer {
   display: flex;
   width: 100%;
   margin: auto;
+}
+
+.mapa {
+  width: 70%;
+}
+
+.text_main_details {
+  width: 30%;
+  background-color: cadetblue;
+  margin: 0;
+  text-align: justify;
+  padding: 0 10px;
 }
 
 /*seteos topheader*/
