@@ -17,7 +17,8 @@ header {
 }
 
 h1 {
-  margin-top: 0;
+  margin-top: 3vh;
+  margin-bottom: 1vh;
 }
 
 ul {
@@ -75,10 +76,22 @@ footer {
   text-align: left;
 }
 
+.main_title {
+  font-size: 2em;
+  text-align: start;
+  padding: 3vh 0vw 0vh 2vw;
+  text-decoration: underline solid;
+}
+
+.main_title::before {
+  content: "# ";
+  color: darkorange;
+}
+
 .mapa_ubicacion {
   display: flex;
   width: 100%;
-  margin: auto;
+  justify-content: center;
 }
 
 .mapa {
@@ -91,7 +104,6 @@ footer {
   margin: 0;
   text-align: justify;
   padding: 0 10px;
-  overflow: scroll;
 }
 
 /*seteos topheader*/
@@ -108,15 +120,15 @@ footer {
   vertical-align: sub;
 }
 
-.container {
+.container-header {
   display: flex;
   justify-content: space-between;
 }
 
-.container ul {
+.container-header ul {
   padding: 0 15px;
 }
-.container li {
+.container-header li {
   display: inline;
   padding: 0 15px;
 }
@@ -218,11 +230,11 @@ footer ul {
 }
 
 footer ul a {
-  color: #4a4a4a;
+  color: dimgrey;
 }
 
 footer p {
-  color: #4a4a4a;
+  color: dimgrey;
   max-width: 65%;
 }
 
@@ -235,7 +247,7 @@ footer p {
   padding-left: 5vw;
 }
 .separador1 {
-  background: #e97c16;
+  background: darkorange;
   height: 5px;
   width: 70px;
 }
