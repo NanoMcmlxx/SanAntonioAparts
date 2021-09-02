@@ -1,0 +1,29 @@
+.navbar .myLinks {
+  display: initial;
+}
+
+.top_header .myLinks {
+  display: initial;
+}
+
+.top_header {
+  font-size: 13px;
+}
+
+.navbar a {
+  font-size: 17px;
+}
+
+.mapa_ubicacion {
+  display: flex;
+  justify-content: center;
+}
+
+.main_title {
+  font-size: 2em;
+  padding: 3vh 0vw 0vh 2vw;
+}
+
+.btm-foot {
+  font-size: 13px;
+}

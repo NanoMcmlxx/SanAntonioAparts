@@ -24,12 +24,12 @@
     <link rel="stylesheet" href="/css/styles.css" />
     <link
       rel="stylesheet"
-      href="/css/styles_tablet.css"
+      href="/css/styles-tablet.css"
       media="(min-width:481px)"
     />
     <link
       rel="stylesheet"
-      href="/css/styles_desktop.css"
+      href="/css/styles-desktop.css"
       media="(min-width:769px)"
     />
     <link
@@ -48,7 +48,7 @@
               (54) 9 11 5800 9100
             </a>
           </li>
-          <li>
+          <li class="myLinks">
             <a href="mailto:info_ikigai_aparts@pm.com">
               <i class="far fa-envelope"> </i>
               info_ikigai_aparts@pm.me
@@ -68,28 +68,31 @@
     <header>
       <div class="main_header"></div>
       <div class="navbar">
+        <div class="myLinks">
         <a class="active" href="/"><i class="fa fa-fw fa-home"></i> Home</a>
         <a href="#"><i class="fas fa-search-dollar"></i> Tarifas</a>
         <a href="#"><i class="fa fa-fw fa-calendar"></i> Disponibilidad</a>
-        <a href="#"><i class="fa fa-fw fa-bed"></i> Reservas</a>
         <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+        </div>  
+        <a href="#"><i class="fa fa-fw fa-bed"></i> Reservar</a>
         <a class="login" href="/register"
-          ><i class="fa fa-fw fa-user-edit"></i> Registrarse</a
+        ><i class="fa fa-fw fa-user-edit"></i> Registrarse</a
         >
         <a class="login" href="/login"
-          ><i class="fa fa-fw fa-user"></i> Login</a
+        ><i class="fa fa-fw fa-user"></i> Login</a
         >
-      </div>
+        </div>
     </header>
     <main>
       <section class="top_main_front">
-        <img class="banner" src="/img/balneario-san-antonio-1.jpg" alt="" />
-        <img class="logo" src="/img/logo_ikigai.svg" />
+        <img class="banner" src="/img/balneario-san-antonio-1.jpg" alt="Vista de la Playa de San Antonio" />
+        <a  href="/ikigai" data-title-ikigai="segui este enlace para descubrir tu IKIGAI"><img class="logo" src="/img/logo_ikigai.svg" title="" alt="Logo IKIGAI" />
+      </a>
       </section>
       <article class="main_details">
         <h2 class="main_title">Nuestro Lugar</h2>
         <div class="mapa_ubicacion">
-          <iframe
+          <iframe class="mapa"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3829.997510990717!2d-54.06744758477194!3d-34.54031108047604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9573611f9da81c25%3A0x402cd4142e6c02bc!2sIKIGAI%20-%20San%20Antonio%20Aparts!5e1!3m2!1ses-419!2sar!4v1629867482044!5m2!1ses-419!2sar"
             width="750"
             height="600"
@@ -123,16 +126,20 @@
               Hay luz eléctrica, los caminos y puentes que recorren el balneario
               se conservan en buen estado y se recomienda tener un vehículo para
               trasladarse hasta La Pedrera, a 6 kms, por abastecimiento,
-              restaurantes y bares. En San Antonio, se disfrutan los sonidos del
+              restaurantes y bares.
+              </p> 
+              <p>En San Antonio, se disfrutan los sonidos del
               silencio y del canto de los pájaros.
-            </p>
+              </p>
+              <h3>Por qué IKIGAI Apartamentos de Playa?</h3>
+              <p></p>
           </div>
         </div>
               <article class="main_details">
-        <h2 class="main_title">Por qué IKIGAI Apartamentos de Playa?</h2>
+        <h2 class="main_title">Nuestros Valores</h2>
       </article>
             <article class="main_details">
-        <h2 class="main_title">Nuestros Valores</h2>
+        <h2 class="main_title">Nuestros Compromiso</h2>
       <article></article>
     </main>
     <footer>

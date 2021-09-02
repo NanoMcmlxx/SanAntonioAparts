@@ -57,10 +57,10 @@ footer {
   width: 100%;
 }
 
-.conteiner_login {
+.container_login {
+  width: 943;
+  height: 628;
   margin: 0;
-  width: 1vw;
-  height: 1vh;
 }
 
 .banner_login {
@@ -68,18 +68,31 @@ footer {
   line-height: 0;
 }
 
-.logo {
+.top_main_front a {
   position: absolute;
-  width: 20%;
+  width: 18%;
   top: 5%;
+  left: 1%;
   display: block;
   text-align: left;
 }
 
+.logo {
+  width: 100%;
+}
+
+.top_main_front a:hover {
+  opacity: 0.8;
+  filter: invert();
+  transform: scale(1.05);
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+
 .main_title {
-  font-size: 2em;
+  font-size: 1.2em;
   text-align: start;
-  padding: 3vh 0vw 0vh 2vw;
+  padding: 2vh 0vw 0vh 1vw;
   text-decoration: underline solid;
 }
 
@@ -89,21 +102,20 @@ footer {
 }
 
 .mapa_ubicacion {
-  display: flex;
+  display: block;
   width: 100%;
-  justify-content: center;
 }
 
 .mapa {
-  width: 70%;
+  width: 100%;
 }
 
 .text_main_details {
-  width: 30%;
+  width: 90vw;
   background-color: cadetblue;
   margin: 0;
   text-align: justify;
-  padding: 0 10px;
+  padding: 5px;
 }
 
 /*seteos topheader*/
@@ -112,25 +124,13 @@ footer {
   background-color: #f7f7f7;
   border-bottom: 1px solid #dddddd;
   font-family: "Montserrat", sans-serif;
-  font-size: 13px;
+  font-size: 11px;
   color: #000000;
+  width: 100vw;
 }
 
 .top_header i {
   vertical-align: sub;
-}
-
-.container-header {
-  display: flex;
-  justify-content: space-between;
-}
-
-.container-header ul {
-  padding: 0 15px;
-}
-.container-header li {
-  display: inline;
-  padding: 0 15px;
 }
 
 /*seteos navbar*/
@@ -149,7 +149,7 @@ footer {
   padding: 12px;
   color: white;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 11px;
 }
 
 /* Navbar links on mouse-over */
@@ -158,7 +158,7 @@ footer {
 }
 
 /* Current/active navbar link */
-.active {
+.navbar .active {
   background-color: #07c27db0;
 }
 
@@ -166,6 +166,14 @@ footer {
 .navbar .login {
   background-color: #0396bbcc;
   float: right;
+}
+
+.top_header .myLinks {
+  display: none;
+}
+
+.navbar .myLinks {
+  display: none;
 }
 
 /* seteos boton whatsapp */
@@ -208,6 +216,32 @@ footer {
   border-radius: 6px;
 }
 
+.top_main_front [data-title-ikigai]:after {
+  content: attr(data-title-ikigai);
+  background-color: #555;
+  color: #fff;
+  font-size: 14px;
+  font-family: Raleway;
+  position: absolute;
+  padding: 3px 20px;
+  bottom: 55%;
+  left: 80%;
+  white-space: nowrap;
+  box-shadow: 1px 1px 3px #222222;
+  opacity: 0.8;
+  border: 1px solid #111111;
+  z-index: 99999;
+  visibility: hidden;
+  border-radius: 6px;
+  line-height: 30px;
+}
+
+.top_main_front [data-title-ikigai]:hover:after {
+  opacity: 1;
+  transition: all 0.1s ease 0.5s;
+  visibility: visible;
+}
+
 /*seteos footer*/
 footer {
   background: #202020;
@@ -218,6 +252,7 @@ footer {
 footer h4 {
   font-family: "Montserrat", sans-serif;
   color: #fff;
+  font-size: 1.2em;
   margin-bottom: 5px;
 }
 
@@ -235,15 +270,15 @@ footer ul a {
 
 footer p {
   color: dimgrey;
-  max-width: 65%;
+  width: 100%;
 }
 
 .row {
-  display: flex;
+  display: block;
 }
 
 .col-footer {
-  width: 33%;
+  width: 90%;
   padding-left: 5vw;
 }
 .separador1 {
@@ -304,7 +339,23 @@ footer i {
 
 .btm-foot {
   background: #fff;
-  margin-top: 25px;
+  margin-top: 10vw 25vh;
   padding: 15px 0;
-  font-size: 13px;
+  font-size: 8px;
+}
+
+.img_fondo {
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid #999;
+  padding: 1px;
+  width: 100vw;
+  height: 100vh;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background: url(../img/san-antonio-3.jpg);
+  background-size: cover;
+}
+.img_fondo img {
+  width: 100%;
 }
