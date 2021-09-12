@@ -2,27 +2,25 @@ const express = require("express");
 const path = require("path");
 const app = express();
 
-app.use(express.static(path.join(__dirname, "./public")));
+app.use(express.static("public"));
+app.set("view engine", "ejs");
 
 app.listen(process.env.PORT || 3030, () => {
   console.log("Servidor corriendo");
 });
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "/views/index.html"));
+  res.render("index");
 });
 
 app.get("/register", (req, res) => {
-  res.sendFile(path.join(__dirname, "/views/register.html"));
+  res.render("register");
 });
 
 app.get("/login", (req, res) => {
-  res.sendFile(path.join(__dirname, "/views/login.html"));
+  res.render("login");
 });
 
-app.get("/index_copy", (req, res) => {
-  res.sendFile(path.join(__dirname, "/views/index_copy.html"));
-});
 app.get("/legales", (req, res) => {
-  res.sendFile(path.join(__dirname, "/views/legales.html"));
+  res.render("legales");
 });
